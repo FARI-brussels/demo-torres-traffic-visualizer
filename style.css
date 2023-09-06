@@ -1,0 +1,39 @@
+.previousBtn {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #2F4FBB;
+    border-radius: 70px;
+    width: auto;
+    height: 50px;
+    color: #2F4FBB;
+    background-color: white;
+    padding: 10px 60px 10px 0px;
+    text-align: left;
+}
+
+/* Reset button styling */
+button#previousButton {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    border: 1px solid #2F4FBB;
+    border-radius: 70px;
+    width: auto;
+    height: 50px;
+    color: #2F4FBB;
+    background-color: white;
+    padding: 10px 60px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;  /* you can adjust this as needed */
+}
+
+button#previousButton:hover {
+    background-color: #34495e;  /* Slightly darker blue on hover */
+}
