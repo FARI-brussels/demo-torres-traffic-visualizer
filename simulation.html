@@ -12,24 +12,40 @@
 
   <link href="https://cesium.com/downloads/cesiumjs/releases/1.108/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
-  <!-- Previous Button -->
-  <button id="previousButton">Previous</button>
 
-  <div id="cesiumContainer"></div>
+  <body>
+    <!-- Previous Button -->
+    
+    <!-- Header Menu for Tabs -->
+    <div class="tabs">
+        <button id="previousButton">
+            Back to map
+        </button>
+        <button class="tab-button" onclick="showTab('text')">Simulation data</button>
+        <button class="tab-button active" onclick="showTab('cesium')">3D visualisation</button>
+        <button class="tab-button" onclick="showTab('video')">2D visualisation</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="cesium" class="tab-content" style="display: block;">
+        <div id="cesiumContainer" style="width: 100%; height: 950px;"></div>
+    </div>
+    <div id="text" class="tab-content">
+      <pre id="textContent"></pre>
+  </div>
+    <div id="video" class="tab-content">
+      <video id="videoPlayer" controls width="100%" height="950px" autoplay>
+          <!-- The source will be set dynamically in app.js -->
+      </video>
+  </div>
   
-  <script src="CCapture.min.js"></script>
-  <!-- Include WebM Writer if you want to export WebM -->
-  <script src="webm-writer-0.2.0.js"></script>
-  <!-- Include download.js for easier file download -->
-  <script src="download.js"></script>
-  <script src="app.js"></script>
 
-
- </div>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
+

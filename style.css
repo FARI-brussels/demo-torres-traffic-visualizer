@@ -1,39 +1,83 @@
-.previousBtn {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid #2F4FBB;
-    border-radius: 70px;
-    width: auto;
-    height: 50px;
+
+body {
+    font-family: Arial, sans-serif; /* Adding a generic font for better aesthetics */
+}
+
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+    padding-top: 28px;
+    font-family: "Plain";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
     color: #2F4FBB;
-    background-color: white;
-    padding: 10px 60px 10px 0px;
-    text-align: left;
+    height: 50px;
+  }
+
+.subtitle {
+    text-align: center;
 }
 
 /* Reset button styling */
 button#previousButton {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 20px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #2F4FBB;
+    border-radius: 70px;
+    width: auto;
+    height: 50px;
+    color: white;
+    background-color: #2F4FBB;
+    text-align: left;
+}
+
+button#previousButton:hover {
+    background-color: #34495e;  /* Slightly darker blue on hover */
+}
+
+
+.tabs {
+    width: fit-content; /* Makes the container as wide as its content */
+    margin-left: auto;  /* Left and right margins set to auto will center */
+    margin-right: auto; /* the block element */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0; /* Some padding for better spacing */
+}
+
+
+.tab-button {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    align-items: center;
     cursor: pointer;
     border: 1px solid #2F4FBB;
     border-radius: 70px;
     width: auto;
     height: 50px;
     color: #2F4FBB;
+    background-color: #2F4FBB;
     background-color: white;
-    padding: 10px 60px 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;  /* you can adjust this as needed */
+    text-align: left;
 }
 
-button#previousButton:hover {
-    background-color: #34495e;  /* Slightly darker blue on hover */
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
 }
