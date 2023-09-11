@@ -14,9 +14,9 @@ if (isIndexPage) {
 
     var cameraPoints = [
         //{ lat: 50.853175, lng: 4.347363, czml_id: '2261491', height: 3, heading: -20, pitch: -10},//yser
-        { simulation_name: "yser", lat: 50.853175, lng: 4.347363, czml_id: '2261491', height: 100, heading: -20, pitch: -30},//yser
-        { simulation_name: "bourse", lat: 50.84801186541467, lng: 4.346133804743512, czml_id: '2261533', height: 3, heading: 50, pitch: -10},//bourse
-        { simulation_name: "anneessens", lat: 50.84144828469932, lng: 4.344349282867575, czml_id: '2261576', height: 3, heading: 35, pitch: -10},//anneessens
+        { simulation_name: "yser", lat: 50.853175, lng: 4.347363, czml_id: '2271922', height: 100, heading: -20, pitch: -30},//yser
+        { simulation_name: "bourse", lat: 50.84801186541467, lng: 4.346133804743512, czml_id: '2271925', height: 3, heading: 50, pitch: -10},//bourse
+        { simulation_name: "anneessens", lat: 50.84144828469932, lng: 4.344349282867575, czml_id: '2271924', height: 3, heading: 35, pitch: -10},//anneessens
     ];
 
     cameraPoints.forEach(point => {
