@@ -61,7 +61,7 @@ if (isSimulationPage) {
 
 
         try {
-            console.log(lat)
+            //load simulation from cesium ion 
             const resource = await Cesium.IonResource.fromAssetId(czml_id);
             const dataSource = await Cesium.CzmlDataSource.load(resource);
             await viewer.dataSources.add(dataSource);
